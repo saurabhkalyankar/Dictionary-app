@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Dictionary App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📘 Dictionary</h1>
+      <button id="themeToggle">🌓</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="wordInput" placeholder="Search a word..." />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="result" class="result-box"></div>
+
+    <div class="controls">
+      <h2>🔍 History</h2>
+      <ul id="historyList"></ul>
+      <h2>⭐ Favorites</h2>
+      <ul id="favoritesList"></ul>
+    </div>
+  </div>
+</body>
+</html>

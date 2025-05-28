@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg-color: #f1f1f1;
+  --text-color: #1f1f1f;
+  --card-bg: #fff;
+  --accent: #6c5ce7;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e2f;
+  --text-color: #ffffff;
+  --card-bg: #2d2d44;
+  --accent: #a29bfe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 700px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#themeToggle {
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-box {
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.result-box h2 {
+  margin-bottom: 10px;
+}
+
+.result-box audio {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.result-box ul {
+  margin-left: 20px;
+}
+
+.controls {
+  margin-top: 30px;
+}
+
+.controls h2 {
+  margin-top: 15px;
+}
+
+.controls ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.controls li {
+  padding: 5px 0;
+  cursor: pointer;
+  color: var(--accent);
+}
